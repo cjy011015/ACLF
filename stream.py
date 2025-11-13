@@ -85,12 +85,6 @@ feature_names = [
 # =========================
 st.markdown(f"<h1 style='text-align: center; font-size: 30px;'>{t['title']}</h1>", unsafe_allow_html=True)
 
-# 标题下的备注说明（输入变量是入院时变量）
-note_text = {
-    "English": "<p style='text-align: center; font-size: 16px; color: gray;'>(All input variables are admission variables)</p>",
-    "中文": "<p style='text-align: center; font-size: 16px; color: gray;'>(输入变量均为入院时变量)</p>"
-}
-st.markdown(note_text[lang], unsafe_allow_html=True)
 # =========================
 # 3️⃣ 用户输入界面
 # =========================
@@ -268,3 +262,4 @@ if show_shap:
 - Features on the **right (red)** increase it;  
 - The **gray dashed line** represents the model’s average output.
 """)
+
